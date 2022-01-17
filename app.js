@@ -10,6 +10,15 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + "/views", '/index.html'));
 });
 
+app.get('/css/assess', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/cssassess.html'));
+});
+
+app.get('/css/margins', (req, res) => {
+    res.sendFile(path.join(__dirname + "/views", '/cssmargin.html'));
+});
+
+
 app.listen(port, () => {
     console.log(`Listening on port:${port}`)
 });
